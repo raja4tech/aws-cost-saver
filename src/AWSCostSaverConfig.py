@@ -1,7 +1,7 @@
 import json
 
 class AWSCostSaverConfig:
-    def __init__(self,filename):
+    def __init__(self, filename):
         self.filename = filename
 
     def read_config(self):

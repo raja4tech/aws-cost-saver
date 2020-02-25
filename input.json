@@ -1,4 +1,21 @@
 {
+  "AWSRegion": "ap-south-1",
+  "AWSAccessKeyID": "",
+  "AWSSecret": "",
+  "UniqueTags": [
+    {
+      "Name": "tag:Environment",
+      "Values": ["qa"]
+    },
+    {
+      "Name":"tag:Product",
+      "Values": ["product1"]
+    },
+    {
+      "Name": "tag:Component",
+      "Values": ["component1"]
+    }
+  ],
   "ElasticLoadBalancers": [
     {
       "Name": "elb-product1-component1",

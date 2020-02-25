@@ -1,0 +1,12 @@
+{
+  "ElasticLoadBalancers": [
+    {
+      "Name": "elb-product1-component1",
+      "MaxInstances": "2"
+    },
+    {
+      "Name": "elb-product1-component2",
+      "MaxInstances": "4"
+    }
+  ]
+}

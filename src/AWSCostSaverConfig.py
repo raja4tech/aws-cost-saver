@@ -5,6 +5,7 @@ class AWSCostSaverConfig:
         self.filename = filename
 
     def read_config(self):
+        print('Reading config from file: %s' %self.filename)
         try:
             with open(self.filename) as config_file:
                 json_content = json.load(config_file)

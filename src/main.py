@@ -28,8 +28,13 @@ def main():
 
     print(instances_under_elbs)
 
+    instances_to_be_ignored = config.get_instances_to_be_ignored()
+    print('Instances to be ignored:\n')
+    print(instances_to_be_ignored)
+
+
     diff = DiffAnalyzer()
-    diff_ec2_instances = diff.get_ec2_diff(total_ec2_list, instances_under_elbs)
+    diff_ec2_instances = diff.get_ec2_diff(total_ec2_list, instances_to_be_ignored, instances_under_elbs)
     print('\n\nInstances that could be shutdown:\n')
     print('InstanceId\t\t\tInstanceName')
     for instance_id, instance_name in diff_ec2_instances.items():

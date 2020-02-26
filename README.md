@@ -1,4 +1,4 @@
-# aws-cost-saver
+# aws-cost-saver [Work In Progress]
 Set of python scripts that helps in monitoring AWS costs
 
 # Goal of the Project:

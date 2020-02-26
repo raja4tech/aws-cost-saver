@@ -21,6 +21,18 @@ class AWSCostSaverConfig:
         return instances
         #print(self.config_json_content['EC2Instances'])
 
+    def get_elbs(self):
+        print('Getting ELB section from config file')
+        return self.config_json_content['ElasticLoadBalancers']
+
+    def get_unique_tags(self):
+        print('Getting Tags section from config file')
+        return self.config_json_content['UniqueTags']
+
+    def get_aws_region(self):
+        print('Getting Region from config file')
+        return self.config_json_content['AWSRegion']
+
 
 def __init__():
     pass

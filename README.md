@@ -23,3 +23,8 @@ EC2: <Instances that aren't under ELB>
 RDS:
 ECS:
 General_Ignore_List:
+
+# Roadmap
+1. Script to find out unwanted instances -   
+- [ ] Basic working version - Based on tags that can uniquely identify a particular product/project/category, find out unwanted instances
+- [ ] Add support for instances that are not under ELB. Eg. DB instances, server running Cron jobs, etc.
